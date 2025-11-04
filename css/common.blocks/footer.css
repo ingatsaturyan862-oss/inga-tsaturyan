@@ -1,0 +1,42 @@
+.footer {}
+
+.footer__container {
+    padding: 70px 15px;
+}
+
+.social-list {
+    max-width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+
+
+}
+
+.list-reset {}
+
+.social-list__item {}
+
+.social-list__icon {
+    width: 41px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+.social-list__icon:hover {
+
+    border-radius: 9px;
+}
+
+.footer__text {
+    font-family: var(--second-family);
+    font-size: 14px;
+    text-align: center;
+    color: #828282;
+    padding: 45px;
+}
+
+.text {}
