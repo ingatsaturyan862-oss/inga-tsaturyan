@@ -66,3 +66,7 @@
     background-color: rgba(0, 0, 0, 0.35);
     z-index: 99;
 }
+
+.dialog__close {
+    box-shadow: 5px 5px 5px rgb(85, 85, 85);
+}
