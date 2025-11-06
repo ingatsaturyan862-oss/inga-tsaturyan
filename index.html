@@ -21,7 +21,7 @@
 
                 <ul class="nav__list list-reset">
                     <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#about">Aboute Me</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#about">About Me</a></li>
                     <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
                     <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
                     <li class="nav__item"><a class="nav__link" href="#contact">Contacts</a></li>
@@ -42,7 +42,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero__container container">
                 <div class="hero__content">
                     <div class="hero__content-inner">
@@ -78,7 +78,7 @@
                 </picture>
             </div>
         </section>
-        <section class="aboute">
+        <section class="about" id="about">
 
             <div class="aboute__container container">
 
@@ -96,7 +96,7 @@
 
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="skills__container container">
                 <h2 class="skills__title title">Skills</h2>
                 <p class="skills__text text">I work in such programs as</p>
@@ -203,7 +203,7 @@
                 </ul>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="portfolio__container container">
                 <h2>Portfolio</h2>
                 <ul class="portfolio__list list-reset">
@@ -227,7 +227,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact__container container">
                 <h2 class="contact__title title">Contacts</h2>
                 <p class="contact__text text">
@@ -271,7 +271,6 @@
                     <svg class="social-list__icon">
                         <use xlink:href="./img/sprite.svg#icon10" />
                     </svg>
-
                 </li>
             </ul>
             <p class="footer__text text">
@@ -279,10 +278,21 @@
                 LinkedIn, Instagram, Behance, Dribble
                 2025
             </p>
-
-
         </div>
     </footer>
+    <dialog class="dialog">
+        <button class="dialog__close">X</button>
+        <form class="dialog__form" method="POST" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html">
+            <input type="hidden" name="access_key" value="64f7b8d2-522a-485b-bc24-54f91b2f50c4">
+            <input class="dialog__input" type="text" name="Name" placeholder="Full Name">
+            <input class="dialog__input" type="tel" name="Phone" placeholder="Phone">
+            <input class="dialog__input" type="email" name="Email" placeholder="Email">
+            <textarea class="dialog__message" name="Message" placeholder="Message"></textarea>
+            <button class="dialog__send">Send</button>
+        </form>
+    </dialog>
+    <div class="overlay"></div>
     <script src="./main.js"></script>
 </body>
 
